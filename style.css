@@ -1,0 +1,284 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,
+body {
+ height: 100%;
+ width: 100%;
+}
+#main > div{
+   min-height: 100vh;
+}
+#main{
+   overflow: hidden;
+}
+#page1 {
+   height: 100vh;
+   width: 100%;
+   background-color: #dadada;
+   position: relative;
+
+}
+
+#cursor {
+   height: 5.5vw;
+   width: 5.5vw;
+   background-color: #ff5f38;
+   border-radius: 50%;
+   position: absolute;
+   pointer-events: none;
+   z-index: 9;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transform: translate(-50%, -50%);
+}
+
+#cursor h5 {
+   font-size: 1vw;
+   font-weight: 600;
+
+
+}
+
+#page1 video {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   position: absolute;
+
+}
+
+#pcontent {
+   height: 100%;
+   width: 100%;
+   position: relative;
+   z-index: 10;
+   color: #fff;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
+
+   /* background-color: black; */
+
+}
+
+nav {
+   width: 100%;
+   padding: 2vw 3vw;
+   display: flex;
+   /* background-color: blue; */
+   justify-content: space-between;
+}
+
+nav h3 {
+   font-size: 1.4vw;
+   font-weight: 250;
+   
+}
+
+nav h4 {
+   font-size: 1.2vw;
+   font-weight: 300;
+   
+
+}
+
+#pcontent h1 {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   font-size: 24vw;
+   font-weight: 100;
+   line-height: 27vw;
+}
+
+#pcontent h1 span {
+   /* background-color: blue; */
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   display: inline-block;
+}
+
+#page2 {
+   height: 70vh;
+   width: 100%;
+   background-color: rgb(255, 255, 255);
+}
+
+#page2 nav {
+   padding-top: 150px;
+   display: flex;
+   font-size: 2vw;
+   font-weight: 200;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#page2 .elem h1 {
+   padding-top: -50px;
+align-items: center;
+   font-size: 50px;
+   
+
+}
+
+#page3 {
+   min-height: 100vh;
+
+   width: 100%;
+   position: relative;
+   padding: 3vw;
+}
+
+#page3top {
+
+   text-align: center;
+
+}
+
+#page3top h4 {
+   margin-bottom: 1vw;
+   font-size: 1 vw;
+   font-weight: 500;
+}
+
+#page3top span {
+   font-size: 0.9vw;
+   background-color: black;
+   color: white;
+   padding: 4px 7px;
+   border-radius: 40%;
+
+}
+
+#page3top h2 {
+   font-size: 3vw;
+   font-weight: 500;
+}
+
+#page3ele {
+   height: 60vh;
+   width: 100%;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 6vw;
+}
+
+#page3ele .box {
+   height: 100%;
+   width: 32.5%;
+   background-color: blue;
+   position: relative;
+
+}
+
+#page3ele .box video {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+
+}
+
+#page3ele .box img {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+   transition: all linear 0.8s;
+}
+
+#page3ele .box:hover img {
+   opacity: 0;
+
+}
+
+#page4 {
+   height: 100vh;
+   width: 100%;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+}
+
+#page4 video {
+   height: 100%;
+   width: 100%;
+   object-fit: contain;
+   background-color: rgb(214, 95, 25);
+
+}
+
+
+#page5 {
+   height: 100vh;
+   width: 100%;
+   padding: 4vw 0;
+   background-color: rgb(255, 255, 255);
+}
+
+#pg5top {
+   font-size: 6vw;
+   padding-left: 110px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   border-bottom: 2px solid rgb(0, 0, 0);
+   width: 90%;
+   padding-bottom: 5px;
+}
+
+#swiper {
+   height: 60vh;
+   width: 100%;
+   background-color: rgb(255, 255, 255);
+   position: relative;
+   margin-top: 30px;
+}
+
+.swiper {
+   width: 110%;
+   height: 100%;
+}
+
+.swiper-slide {
+   width: 400px;
+   text-align: center;
+   font-size: 18px;
+   background: #ffffff;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: flex-end;
+}
+
+.swiper-slide img {
+   display: block;
+   width: 20%;
+   height: 100%;
+   object-fit: cover;
+}
+
+#loader {
+   height: 100%;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   background-color: black;
+   z-index: 99;  display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #fff;
+   gap: 10px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#loader h3{
+   font-size: 2vw;
+   font-weight: 100;
+}
